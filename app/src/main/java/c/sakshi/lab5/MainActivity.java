@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e("LOGIN", "Error, trying to login with null username");
             return;
         }
-        Intent intent = new Intent(this, S2a.class);
+        Intent intent = new Intent(this, SecondActivity.class);
         sp.edit().putString("u",u).apply();
         startActivity(intent);
         finish();
