@@ -49,7 +49,7 @@ public class ThirdActivity extends AppCompatActivity {
             dbHelper.saveNotes(username, title, noteContent, date);
         } else {
             title = "NOTE_" + (noteid + 1);
-            dbHelper.updateNote(title, date, noteContent);
+            dbHelper.updateNote(title, date, noteContent, username);
         }
 
         Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
